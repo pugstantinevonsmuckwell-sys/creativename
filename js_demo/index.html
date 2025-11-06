@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shoshana Barnwell|JS Demo </title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+    <h1> Here are some words.</h1>
+    <h2>what is an onclick event. sounds weird</h2>
+    <p>click this <a href="http://chihuahuaspin.com/" target= "blank" onclick="alert('This website is quite funny and \n you should be prepared to laugh and or cry')">button</a></p>
+
+    <h2> I don't want to do math</h2>
+    <p>what's 327+460?</p>
+    <button onclick="document.getElementById('add').innerHTML=327+460"> click here to maybe get an answer</button>
+    <p id="add"></p>
+
+
+    <h2> java script is complicated</h2>
+    <button onclick="document.getElementById('change-text').innerHTML='good job clicking that button.'"> click this and find out</button>
+    <p id="change-text">this will change</p>
+
+
+    <h2> i wonder what time it is</h2>
+    <button onclick="document.getElementById('date').innerHTML=Date()">click this for the date and time</button>
+    <p id="date"></p>
+
+
+    <h2> where's the function?</h2>
+    <p>heh</p>
+    <button onclick="pFun()"> this is a button that make function go</button>
+ <p id="p-fun"></p>
+
+
+ <h2>what's your name?</h2>
+ <button onclick="askName()">click this to enter it</button>
+ <p id="ask-name"></p>
+
+
+ <h2> we can ask questions with js?</h2>
+ <button onclick="askQuestion()">click here for something. possibly cool</button>
+ <p id="question"></p>
+   
+
+    <script>
+        //alert("words!")
+        //alert("how many words do I need?")
+       //alert("I could write fun words...")
+        //alert("demitsasse")
+       // alert("supercalifragilisticexpialidocious.\n i am not sure if that is \n an actual word.")
+
+       function pFun () {
+
+            var p = document.getElementById('p-fun');
+            p.innerHTML='function!';
+            p.style.color= 'blue';
+            p.style.fontSize = '40px';
+       }
+
+
+       function askName () {
+        var nameReturn = document.getElementById('ask-name');
+        var name = prompt('enter name here. its super not creepy');
+        if (name == '') {
+            alert('you messed this up somehow. try again');
+        } else {
+          nameReturn.innerHTML= 'Hello ' + name + '. good job entering your name';
+        }
+
+       }
+    </script>
+</body>
+</html>

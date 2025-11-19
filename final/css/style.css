@@ -1,0 +1,55 @@
+body{
+
+font-family: cursive;
+
+
+}
+
+
+
+
+.container {
+  margin: 0 auto;
+}
+
+/* Target only the nav list */
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #429c36;
+  display: flex;
+  justify-content: center; /* Centers the links */
+}
+
+/* Style each list item */
+.nav li {
+  margin: 0;
+}
+
+/* Style the links */
+.nav li a {
+  display: block;
+  color: rgb(251, 251, 241);
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Hover effect */
+.nav li a:hover {
+  background-color: #008d18;
+}
+
+
+
+.background{
+
+  color: rgb(244, 238, 185);
+}
+
+.gallery-item img {
+  transition: transform 0.3s ease;
+}
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
